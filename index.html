@@ -3,15 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jonathan Caleb | Business Intelligence</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, sans-serif;
 background:#0f172a;
 color:white;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,0.95);
+padding:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+z-index:1000;
+backdrop-filter:blur(10px);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
 }
 
 .hero{
@@ -21,15 +47,16 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
-h1{
+.hero h1{
 font-size:4rem;
-margin:0;
+margin-bottom:10px;
 }
 
-h2{
-font-weight:300;
+.hero p{
+font-size:1.3rem;
 color:#94a3b8;
 }
 
@@ -42,15 +69,45 @@ text-decoration:none;
 border-radius:10px;
 }
 
-.section{
-padding:80px 10%;
+section{
+padding:100px 10%;
+}
+
+h2{
+margin-bottom:30px;
+font-size:2rem;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:15px;
-margin-top:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.timeline{
+border-left:3px solid #3b82f6;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#94a3b8;
 }
 
 </style>
@@ -59,37 +116,133 @@ margin-top:20px;
 
 <body>
 
+<nav>
+<a href="#sobre">Sobre mí</a>
+<a href="#skills">Tecnologías</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#certificaciones">Certificaciones</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
 <section class="hero">
 
 <h1>Jonathan Caleb</h1>
 
-<h2>Business Intelligence & Data Analytics</h2>
+<p>Business Intelligence • Data Analytics • Power BI • SQL • Python</p>
 
 <a href="#proyectos" class="btn">Ver proyectos</a>
 
 </section>
 
-<section class="section">
+<section id="sobre">
 
 <h2>Sobre mí</h2>
 
-<div class="card">
-Profesional en transición hacia Business Intelligence y Data Analytics.
-Actualmente desarrollando proyectos con Power BI, SQL, Python y análisis de datos.
+<p>
+Profesional orientado al análisis de datos y Business Intelligence.
+Actualmente desarrollando competencias en Power BI, SQL, Python,
+visualización de datos y Business Analytics mediante formación especializada
+y proyectos prácticos.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Tecnologías</h2>
+
+<div class="cards">
+
+<div class="card">Power BI</div>
+
+<div class="card">SQL</div>
+
+<div class="card">Python</div>
+
+<div class="card">Excel</div>
+
+<div class="card">Tableau</div>
+
+<div class="card">Power Query</div>
+
+<div class="card">GitHub</div>
+
+<div class="card">Business Analytics</div>
+
 </div>
 
 </section>
 
-<section id="proyectos" class="section">
+<section id="proyectos">
 
 <h2>Proyectos</h2>
 
+<div class="cards">
+
 <div class="card">
-🚀 Próximamente:
-Retos y proyectos desarrollados durante la formación FUNDAE.
+<h3>Dashboard Power BI</h3>
+<p>Próximamente</p>
+</div>
+
+<div class="card">
+<h3>Predicción de Ventas</h3>
+<p>Próximamente</p>
+</div>
+
+<div class="card">
+<h3>Business Analytics</h3>
+<p>Próximamente</p>
+</div>
+
+<div class="card">
+<h3>Visualización de Datos</h3>
+<p>Próximamente</p>
+</div>
+
 </div>
 
 </section>
+
+<section id="certificaciones">
+
+<h2>Roadmap y Certificaciones</h2>
+
+<div class="timeline">
+
+<div>
+<h3>2025</h3>
+<p>Excel avanzado y actualización profesional</p>
+</div>
+
+<div>
+<h3>2026</h3>
+<p>Business Intelligence y Big Data</p>
+</div>
+
+<div>
+<h3>2026</h3>
+<p>Power BI, SQL y Python</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p>GitHub: github.com/jcalebdata</p>
+
+<p>LinkedIn: Próximamente</p>
+
+</section>
+
+<footer>
+
+Jonathan Caleb · Business Intelligence & Data Analytics
+
+</footer>
 
 </body>
 </html>
